@@ -10,5 +10,5 @@ class inicio : AppCompatActivity() {
     }
 
 
-    var asd = 21;
+    var asd = 20;
 }
