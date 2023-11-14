@@ -4,4 +4,7 @@
     <string name="registrar">Registrar</string>
     <string name="salir">Salir</string>
     <string name="autores"><u>Autores</u></string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="volver">Volver</string>
+    <string name="integrantes">Integrantes</string>
 </resources>
