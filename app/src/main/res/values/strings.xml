@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ProyectoMobil</string>
+    <string name="acceder">Acceder</string>
+    <string name="registrar">Registrar</string>
+    <string name="salir">Salir</string>
+    <string name="autores"><u>Autores</u></string>
 </resources>

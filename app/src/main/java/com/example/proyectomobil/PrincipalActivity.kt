@@ -3,12 +3,9 @@ package com.example.proyectomobil
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class inicio : AppCompatActivity() {
+class PrincipalActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inicio)
+        setContentView(R.layout.activity_principal)
     }
-
-
-    var asd = 21;
 }
