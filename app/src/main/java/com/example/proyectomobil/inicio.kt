@@ -8,4 +8,7 @@ class inicio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
     }
+
+
+    var asd = 14;
 }
