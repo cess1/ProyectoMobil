@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProyectoMobil"
         tools:targetApi="31">
         <activity
+            android:name=".AutoresActivity"
+            android:exported="false" />
+        <activity
             android:name=".InicioActivity"
             android:exported="false" />
         <activity
@@ -23,9 +26,7 @@
             android:exported="false" />
         <activity
             android:name=".PrincipalActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.ProyectoMobil">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

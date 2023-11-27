@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">ProyectoMobil</string>
+    <string name="app_name">Mappi</string>
     <string name="acceder">Acceder</string>
     <string name="registrar">Registrar</string>
     <string name="salir">Salir</string>
-    <string name="autores"><u>Autores</u></string>
+    <string name="autores">Autores</string>
     <string name="login">Iniciar Sesión</string>
     <string name="volver">Volver</string>
     <string name="integrantes">Integrantes</string>
