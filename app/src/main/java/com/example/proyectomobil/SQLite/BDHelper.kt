@@ -42,7 +42,7 @@ class BDHelper (context: Context, factory: SQLiteDatabase.CursorFactory?)
     fun CrearRegistro(
         correo:String, nombres:String,
         apellidos:String, telefono: String, contrasena:String ){
-    val values = ContentValues();
+        val values = ContentValues();
         values.put(COLUMN_NOMBRES,nombres)
         values.put(COLUMN_APELLIDOS,apellidos)
         values.put(COLUMN_TELEFONO,telefono)
@@ -52,7 +52,7 @@ class BDHelper (context: Context, factory: SQLiteDatabase.CursorFactory?)
         db.insert(TABLA_USUARIOS, null, values)
         db.close()
     }
-    fun Acceder(telefono:Int, contrasena: String) : Cursor? {
+    fun Acceder(telefono: String, contrasena: String) : Cursor? {
         val db = this.readableDatabase
         val sql = "SELECT * FROM " + TABLA_USUARIOS + " WHERE " + COLUMN_TELEFONO + " = '" + telefono + "' AND " +
                 COLUMN_CONTRASENA + " = '" + contrasena + "' "
