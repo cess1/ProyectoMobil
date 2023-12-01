@@ -10,7 +10,7 @@ class BDHelper (context: Context, factory: SQLiteDatabase.CursorFactory?)
     : SQLiteOpenHelper (context, DATABASE_NAME, factory, DATABASE_VERSION) {
 
         companion object {
-            private val DATABASE_NAME = "BD_Mapapin"
+            private val DATABASE_NAME = "BD_Mappkii"
             private val DATABASE_VERSION = 1
             private val TABLA_USUARIOS = "USUARIO"
             private val COLUMN_ID = "IDUSER"
@@ -18,7 +18,7 @@ class BDHelper (context: Context, factory: SQLiteDatabase.CursorFactory?)
             private val COLUMN_APELLIDOS = "APELLIDOS"
             private val COLUMN_TELEFONO = "TELEFONO"
             private val COLUMN_CORREO = "CORREO"
-            private val COLUMN_CONTRASENA = "CONTRASEÑA"
+            private val COLUMN_CONTRASENA = "CONTRASENA"
 
         }
 
