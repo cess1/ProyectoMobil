@@ -10,4 +10,8 @@
     <color name="blue">#0000EE</color>
     <color name="green">#32de84</color>
     <color name="grey">#A9A9A9</color>
+    <color name="colorCardBackground">#FFFFFF</color>
+    <color name="colorTextTitle">#333333</color>
+    <color name="colorTextSubtitle">#666666</color>
+
 </resources>
