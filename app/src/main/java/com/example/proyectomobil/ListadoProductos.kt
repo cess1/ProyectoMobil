@@ -14,7 +14,7 @@ import com.example.proyectomobil.MappkiiREST.RetrofitHelperProduc
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
-class ListadoProductos : AppCompatActivity() {
+class ListadoProductos : AppCompatActivity(), RestAdapterProductos.OnItemClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listado_productos)
@@ -37,7 +37,7 @@ class ListadoProductos : AppCompatActivity() {
                 runOnUiThread {
                     val recyclerView: RecyclerView = findViewById(R.id.list_prod)
                     recyclerView.layoutManager = LinearLayoutManager(this@ListadoProductos)
-                    val adapter = RestAdapterProductos(items.orEmpty())
+                    val adapter = RestAdapterProductos(items.orEmpty(),this@ListadoProductos)
                     recyclerView.adapter = adapter
                 }
             } else {
@@ -45,7 +45,11 @@ class ListadoProductos : AppCompatActivity() {
             }
         }
 
+    }
 
-
+    override fun onItemClick(position: Int) {
+        // Abre la actividad PagarActivity al hacer clic en un elemento
+        val intent = Intent(this, PagarActivity::class.java)
+        startActivity(intent)
     }
 }
