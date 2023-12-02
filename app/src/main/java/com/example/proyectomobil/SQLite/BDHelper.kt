@@ -20,6 +20,10 @@ class BDHelper (context: Context, factory: SQLiteDatabase.CursorFactory?)
             private val COLUMN_CORREO = "CORREO"
             private val COLUMN_CONTRASENA = "CONTRASENA"
 
+            // Constantes para la tabla de comentarios
+            private const val TABLA_COMENTARIOS = "COMENTARIOS"
+            private const val COLUMN_ID_COMENTARIO = "IDCOMENTARIO"
+            private const val COLUMN_COMENTARIO = "COMENTARIO"
         }
 
     override fun onCreate(db: SQLiteDatabase) {
@@ -33,6 +37,14 @@ class BDHelper (context: Context, factory: SQLiteDatabase.CursorFactory?)
                     COLUMN_CONTRASENA + " TEXT" + ")"
                     )
         db.execSQL(queryCreateTable)
+
+        // Crear tabla de comentarios
+        val queryCreateTableComentarios =
+            ("CREATE TABLE $TABLA_COMENTARIOS ( " +
+                    "$COLUMN_ID_COMENTARIO INTEGER PRIMARY KEY, " +
+                    "$COLUMN_COMENTARIO TEXT)")
+        db.execSQL(queryCreateTableComentarios)
+
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
@@ -56,5 +68,14 @@ class BDHelper (context: Context, factory: SQLiteDatabase.CursorFactory?)
                 COLUMN_CONTRASENA + " = '" + contrasena + "' "
 
         return db.rawQuery(sql, null)
+    }
+
+    fun CrearRegistroComentario(comentario: String) {
+        val values = ContentValues()
+        values.put(COLUMN_COMENTARIO, comentario)
+
+        val db = this.writableDatabase
+        db.insert(TABLA_COMENTARIOS, null, values)
+        db.close()
     }
 }
