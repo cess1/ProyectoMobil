@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.proyectomobil.MainActivity
+import com.example.proyectomobil.MappkiiREST.Comentarios
 
 
 class InicioActivity : AppCompatActivity() {
@@ -23,7 +24,7 @@ class InicioActivity : AppCompatActivity() {
         }
 
         btnComentarios.setOnClickListener {
-            val comment = Intent(this, MainActivity::class.java)
+            val comment = Intent(this, Comentarios::class.java)
             startActivity(comment)
         }
     }
