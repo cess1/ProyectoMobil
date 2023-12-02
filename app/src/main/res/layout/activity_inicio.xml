@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                app:srcCompat="@drawable/ic_launcher_foreground" />
+                app:srcCompat="@mipmap/menu_foreground" />
 
             <Button
                 android:id="@+id/btnProductos"
@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                app:srcCompat="@drawable/ic_launcher_foreground" />
+                app:srcCompat="@mipmap/comentario_foreground" />
 
             <Button
                 android:id="@+id/btnComentarios"
@@ -89,7 +89,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                app:srcCompat="@drawable/ic_launcher_foreground" />
+                app:srcCompat="@mipmap/video_foreground" />
 
             <Button
                 android:id="@+id/buttonVideos"
@@ -111,7 +111,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                app:srcCompat="@drawable/ic_launcher_foreground" />
+                app:srcCompat="@mipmap/home_foreground" />
 
             <Button
                 android:id="@+id/button4"

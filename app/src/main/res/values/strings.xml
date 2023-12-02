@@ -7,4 +7,14 @@
     <string name="login">Iniciar Sesión</string>
     <string name="volver">Volver</string>
     <string name="integrantes">Integrantes</string>
+    <string name="telefono">Teléfono</string>
+    <string name="password">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="codigo">Código:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="apellido">Apellido:</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="correo">Correo</string>
+    <string name="registra">Registre sus Datos</string>
 </resources>

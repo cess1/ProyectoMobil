@@ -10,8 +10,14 @@
     <color name="blue">#0000EE</color>
     <color name="green">#32de84</color>
     <color name="grey">#A9A9A9</color>
+    <color name="light_grey">#D3D3D3</color>
     <color name="colorCardBackground">#FFFFFF</color>
     <color name="colorTextTitle">#333333</color>
     <color name="colorTextSubtitle">#666666</color>
+    <color name="uno">#CA7FF5</color>
+    <color name="dos">#7FF5B7</color>
+    <color name="tres">#F5CB7F</color>
+    <color name="cuatro">#A09888</color>
+    <color name="cinco">#6C5B75</color>
 
 </resources>
