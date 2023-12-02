@@ -9,106 +9,127 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="5dp"
-        >
+        android:background="#FF4D4D"
+        android:padding="1dp">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FCFF81"
+            android:elevation="4dp"
             android:gravity="center"
-            >
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <TextView
-                android:id="@+id/lblComb"
-                android:textColor="@color/black"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Combo"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:fontFamily="sans-serif-light"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/NroCOMBO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NRO. DE COMBO:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/lblComb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Combo"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/lblNombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:text="Combo Especial XL"
-                android:textSize="16sp"
-                android:layout_marginBottom="4dp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/lblDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:text="Una increíble combinación para satisfacer tu gran apetito."
-                android:textSize="14sp"
-                android:layout_marginBottom="4dp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/lblPlatoPrincipal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:text="Plato Principal: Doble Hamburguesa con queso"
-                android:textSize="14sp"
-                android:layout_marginBottom="4dp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/lblAcomp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:text="Acompañamientos: Alitas de pollo + Onion Rings + Papas fritas Grandes + Refresco"
-                android:textSize="14sp"
-                android:layout_marginBottom="4dp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/lblEnsaladas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:text="Ensaladas: Ensalada César"
-                android:textSize="14sp"
-                android:layout_marginBottom="4dp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/lblPostre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:text="Postre: Tarta de chocolate"
-                android:textSize="14sp"
-                android:layout_marginBottom="4dp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/lblPrecio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:text="Precio: $15.99"
-                android:textSize="14sp"
-                android:layout_marginBottom="4dp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/lblTamano"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:text="Tamaño: Grande"
-                android:textSize="14sp"
-                android:layout_marginBottom="4dp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/lblDisp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:text="Disponibilidad: Sí"
-                android:textSize="14sp"
-                android:layout_marginBottom="4dp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/lblCat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:text="Categoría: Comida rápida"
-                android:textSize="14sp"
-                android:layout_marginBottom="4dp" />
+                android:textSize="14sp" />
 
         </LinearLayout>
     </RelativeLayout>
