@@ -3,19 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="5dp"
-    app:cardCornerRadius="0dp">
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
-        android:background="@color/colorCardBackground"> <!-- Cambia a tu color de fondo preferido -->
+        android:padding="15dp"
+        android:background="@color/dos"> <!-- Cambia a tu color de fondo preferido -->
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
+            android:layout_marginLeft="10dp"
             android:orientation="vertical">
 
             <TextView
@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:text="TITULO"
                 android:textStyle="bold"
-                android:textSize="24sp"
+                android:textSize="40dp"
                 android:fontFamily="sans-serif-light"
                 android:textColor="@color/colorTextTitle"
                 android:shadowColor="#000000"
@@ -37,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="MAS"
-                android:textSize="18sp"
+                android:textSize="25dp"
                 android:fontFamily="sans-serif-light"
                 android:textColor="@color/colorTextSubtitle" /> <!-- Cambia a tu color de texto preferido -->
 

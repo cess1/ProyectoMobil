@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.proyectomobil.InicioActivity
 import com.example.proyectomobil.MainActivity
 import com.example.proyectomobil.R
 import com.example.proyectomobil.SQLite.BDHelper
@@ -32,7 +33,7 @@ class Comentarios : AppCompatActivity() {
         // Asignar un evento clic al botón de regresar
         btnRegresarComentarios.setOnClickListener {
             // Llamar a la actividad MainActivity
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, InicioActivity::class.java)
             startActivity(intent)
         }
 

@@ -5,24 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".VideoPlayerActivity">
+    tools:context=".VideoPlayerActivity"
+    android:background="@color/tres">
 
 
     <TextView
         android:id="@+id/videoTitleTextView"
-        android:layout_margin="15dp"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:gravity="center"
-        android:textSize="25dp"
+        android:textSize="40dp"
         android:layout_height="wrap_content"
-        android:text="Video" />
+        android:text="Video"
+        android:background="@color/black"
+        android:textColor="@color/light_grey"/>
 
 
     <VideoView
         android:id="@+id/vdPromocional"
         android:layout_width="match_parent"
-        android:layout_margin="10dp"
-        android:layout_height="500dp">
+        android:layout_margin="30dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center">
     </VideoView>
 
 

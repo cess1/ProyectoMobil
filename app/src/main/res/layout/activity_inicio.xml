@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".InicioActivity"
     android:orientation="vertical"
-    android:background="@color/teal_200">
+    android:background="@color/tres">
 
     <TextView
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
         android:padding="10dp"
         android:textStyle="bold"
         android:background="@color/black"
-        android:textColor="@color/white"
+        android:textColor="@color/light_grey"
         />
 
     <LinearLayout
@@ -38,13 +38,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                app:srcCompat="@mipmap/menu_foreground" />
+                app:srcCompat="@mipmap/menu_foreground"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"/>
 
             <Button
                 android:id="@+id/btnProductos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MENU" />
+                android:text="MENU"
+                android:background="@color/light_grey"
+                android:layout_gravity="center_horizontal"/>
 
         </LinearLayout>
 
@@ -62,13 +66,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                app:srcCompat="@mipmap/comentario_foreground" />
+                app:srcCompat="@mipmap/comentario_foreground"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"/>
 
             <Button
                 android:id="@+id/btnComentarios"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="COMENTARIOS" />
+                android:text="COMENTARIOS"
+                android:background="@color/light_grey"
+                android:paddingHorizontal="10dp"
+                android:layout_gravity="center_horizontal"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -89,13 +98,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                app:srcCompat="@mipmap/video_foreground" />
+                app:srcCompat="@mipmap/video_foreground"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"/>
 
             <Button
                 android:id="@+id/buttonVideos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="VideosComida" />
+                android:text="VideosComida"
+                android:background="@color/light_grey"
+                android:paddingHorizontal="10dp"
+                android:layout_gravity="center_horizontal"/>
 
         </LinearLayout>
         <LinearLayout
@@ -111,13 +125,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                app:srcCompat="@mipmap/home_foreground" />
+                app:srcCompat="@mipmap/home_foreground"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"/>
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btnSalir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Cerrar Sesión"
+                android:background="@color/light_grey"
+                android:paddingHorizontal="10dp"
+                android:layout_gravity="center_horizontal"/>
         </LinearLayout>
     </LinearLayout>
 

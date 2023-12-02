@@ -24,10 +24,11 @@
 
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_margin="50dp"
-        app:srcCompat="@mipmap/logo"/>
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_margin="40dp"
+        app:srcCompat="@mipmap/logo"
+        android:layout_gravity="center"/>
 
     <EditText
         android:id="@+id/txtTelefono"
@@ -35,30 +36,39 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:hint="@string/telefono" />
+        android:hint="@string/telefono"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="10dp"/>
 
     <EditText
         android:id="@+id/txtContraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text"
-        android:hint="@string/password" />
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"/>
 
     <Button
         android:id="@+id/LoginbtnIngresar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/dos"
-        android:layout_margin="10dp"
-        android:text="@string/ingresar" />
+        android:text="@string/ingresar"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"/>
 
     <Button
         android:id="@+id/LoginbtnVolver"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/light_grey"
-        android:layout_margin="10dp"
-        android:text="@string/volver" />
+        android:text="@string/volver"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="30dp"/>
 
 </LinearLayout>

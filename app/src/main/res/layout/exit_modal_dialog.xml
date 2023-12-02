@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mensaje"
-            android:textSize="20dp"
+            android:textSize="25dp"
             android:layout_marginVertical="20dp"/>
 
         <LinearLayout
@@ -40,14 +40,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Salir"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:background="@color/dos"
+                android:layout_marginRight="20dp"
+                android:paddingHorizontal="20dp"/>
 
             <Button
                 android:id="@+id/salirbtnCancelar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cancelar"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:background="@color/light_grey"
+                android:layout_marginLeft="20dp"
+                android:paddingHorizontal="10dp"/>
 
         </LinearLayout>
 

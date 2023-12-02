@@ -37,7 +37,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="NRO. DE COMBO:"
-                    android:textSize="16sp" />
+                    android:textSize="25dp" />
 
                 <TextView
                     android:id="@+id/lblComb"
@@ -46,7 +46,7 @@
                     android:fontFamily="sans-serif-light"
                     android:text="Combo"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
+                    android:textSize="30dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
                 android:text="Combo Especial XL"
-                android:textSize="16sp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/lblDesc"
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
                 android:text="Una increíble combinación para satisfacer tu gran apetito."
-                android:textSize="14sp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/lblPlatoPrincipal"
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
                 android:text="Plato Principal: Doble Hamburguesa con queso"
-                android:textSize="14sp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/lblAcomp"
@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
                 android:text="Acompañamientos: Alitas de pollo + Onion Rings + Papas fritas Grandes + Refresco"
-                android:textSize="14sp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/lblEnsaladas"
@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
                 android:text="Ensaladas: Ensalada César"
-                android:textSize="14sp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/lblPostre"
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
                 android:text="Postre: Tarta de chocolate"
-                android:textSize="14sp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/lblPrecio"
@@ -105,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
                 android:text="Precio: $15.99"
-                android:textSize="14sp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/lblTamano"
@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
                 android:text="Tamaño: Grande"
-                android:textSize="14sp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/lblDisp"
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
                 android:text="Disponibilidad: Sí"
-                android:textSize="14sp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/lblCat"
@@ -129,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
                 android:text="Categoría: Comida rápida"
-                android:textSize="14sp" />
+                android:textSize="20dp" />
 
         </LinearLayout>
     </RelativeLayout>

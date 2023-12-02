@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".PagarActivity">
+    tools:context=".PagarActivity"
+    android:orientation="vertical"
+    android:background="@color/tres">
 
     <EditText
         android:id="@+id/editNombre"
@@ -36,7 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/editTarjeta"
         android:layout_marginTop="16dp"
-        android:text="Pagar" />
+        android:text="Pagar"
+        android:background="@color/dos"/>
 
     <Button
         android:id="@+id/btnSalir"
@@ -44,7 +47,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/btnPagar"
         android:layout_marginTop="8dp"
-        android:text="Salir" />
+        android:text="Salir"
+        android:background="@color/light_grey"
+        />
 
 
 </RelativeLayout>

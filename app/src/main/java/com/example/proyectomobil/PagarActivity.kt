@@ -22,7 +22,7 @@ class PagarActivity : AppCompatActivity() {
             val mensaje = "Su pedido llegará en $tiempoEntrega minutos."
 
 
-            Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show()
 
             val intent = Intent(this, InicioActivity::class.java)
             startActivity(intent)

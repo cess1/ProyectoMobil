@@ -60,7 +60,7 @@ class PrincipalActivity : AppCompatActivity() {
         mensajeModal.text = mensaje
 
         btnSalir.setOnClickListener {
-            finish()
+            finishAffinity()
         }
 
         btnCancelar.setOnClickListener {
