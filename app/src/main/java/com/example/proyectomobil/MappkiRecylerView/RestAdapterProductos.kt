@@ -10,7 +10,6 @@ import android.net.Uri
 import android.view.ViewParent
 import android.widget.Button
 import android.widget.TextView
-import com.example.proyectomobil.ComprarActivity
 import com.example.proyectomobil.R
 
 class RestAdapterProductos (private val mList: List<ItemsProductos>):
