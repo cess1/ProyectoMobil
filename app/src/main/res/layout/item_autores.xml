@@ -1,43 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
 
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="10dp"
+
+android:padding="5dp">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5dp">
+    android:orientation="horizontal"
+    android:background="#808080"
+    android:padding="5dp"
+    >
+    <ImageView
+        android:id="@+id/image_libro"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:src="@mipmap/ic_launcher">
+    </ImageView>
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
         android:orientation="vertical"
-        android:gravity="center"
-        >
-    <TextView
-        android:id="@+id/lbl_Codigo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Codigo:"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:fontFamily="sans-serif-light">
-    </TextView>
-    <TextView
-        android:id="@+id/lbl_Nombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nombre:"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:fontFamily="sans-serif-light">
-    </TextView>
-        <TextView
-            android:id="@+id/lbl_Apellido"
-            android:layout_width="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Apellido:"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:fontFamily="sans-serif-light">
-        </TextView>
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/text_Codigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:textSize="20dp"
+                android:text="Codigo:"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/lbl_Codigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/text_Nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Nombre:"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/lbl_Nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/text_Apellido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Apellido:"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/lbl_Apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                >
+
+            </TextView>
+
+        </LinearLayout>
     </LinearLayout>
+</LinearLayout>
+
 
 </androidx.cardview.widget.CardView>
+
+
