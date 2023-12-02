@@ -1,6 +1,6 @@
 package com.example.proyectomobil.MappkiiREST
 
-data class Productos(
+data class ListaProductos(
 
     val combo: String,
     val nombre: String,
@@ -9,7 +9,7 @@ data class Productos(
     val acompanamientos: String,
     val ensaladas: String,
     val postre: String,
-    val precio: Double,
+    val precio: String,
     val tamano: String,
     val disponibilidad: String,
     val categoriaComidaRapida: String

@@ -27,6 +27,13 @@ class InicioActivity : AppCompatActivity() {
             val comment = Intent(this, Comentarios::class.java)
             startActivity(comment)
         }
+
+        val btnMenu : Button = findViewById(R.id.btnProductos)
+
+        btnMenu.setOnClickListener{
+            val coment = Intent(this, ListadoProductos::class.java)
+            startActivity(coment)
+        }
     }
 
 
