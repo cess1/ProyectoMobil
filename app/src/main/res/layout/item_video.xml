@@ -36,7 +36,7 @@
                 android:id="@+id/textSubtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Subtitulo"
+                android:text="MAS"
                 android:textSize="18sp"
                 android:fontFamily="sans-serif-light"
                 android:textColor="@color/colorTextSubtitle" /> <!-- Cambia a tu color de texto preferido -->
