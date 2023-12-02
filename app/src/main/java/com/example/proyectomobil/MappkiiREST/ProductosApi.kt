@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 interface ProductosApi {
 
-    @GET("/mocks/97da0bc9-ef42-4ad8-9567-6146102212f1/ListProd")
-    suspend fun getQuotes(): Response<String>
+    @GET("/mocks/865c373e-2d71-44b6-a7aa-3047e16d4837/ListProd")
+    suspend fun getQuotes(): Response<ProductosList>
 }
