@@ -38,5 +38,11 @@ class AccederActivity : AppCompatActivity() {
 
 
         }
+        val btnCancelar: Button = findViewById(R.id.LoginbtnVolver)
+        btnCancelar.setOnClickListener {
+            val productScreen = Intent(this, PrincipalActivity::class.java)
+            startActivity(productScreen)
+        }
+
     }
 }

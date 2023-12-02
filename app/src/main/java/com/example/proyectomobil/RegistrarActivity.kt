@@ -1,5 +1,6 @@
 package com.example.proyectomobil
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -38,8 +39,17 @@ class RegistrarActivity : AppCompatActivity() {
             inputApellidos.text.clear()
             inputTelefono.text.clear()
             inputContrasena.text.clear()
+
+            val productScreen = Intent(this, AccederActivity::class.java)
+            startActivity(productScreen)
         }
 
+        val btnCancelar : Button = findViewById(R.id.btnVolver)
+
+        btnCancelar.setOnClickListener{
+            val productScreen = Intent(this, PrincipalActivity::class.java)
+            startActivity(productScreen)
+        }
 
     }
 }
