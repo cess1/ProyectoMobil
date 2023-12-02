@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.content.Intent
 import android.net.Uri
 import android.view.ViewParent
+import android.widget.Button
 import android.widget.TextView
 import com.example.proyectomobil.R
 
@@ -28,6 +29,8 @@ class RestAdapterProductos (private val mList: List<ItemsProductos>):
         val cate: TextView = ItemView.findViewById(R.id.lblCat)
         
     }
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder{
         val view = LayoutInflater.from(parent.context).inflate(R.layout.items_productos, parent, false)
         return ViewHolder(view)
@@ -49,5 +52,6 @@ class RestAdapterProductos (private val mList: List<ItemsProductos>):
         holder.dispo.text = itemsRest.disponibilidad
         holder.cate.text = itemsRest.categoriaComidaRapida
     }
+
 
 }
