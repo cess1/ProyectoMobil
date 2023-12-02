@@ -11,8 +11,9 @@ import android.view.ViewParent
 import android.widget.Button
 import android.widget.TextView
 import com.example.proyectomobil.R
+import com.example.proyectomobil.Video
 
-class RestAdapterProductos (private val mList: List<ItemsProductos>):
+class RestAdapterProductos (private val mList: List<ItemsProductos>,private val listener: OnItemClickListener):
     RecyclerView.Adapter<RestAdapterProductos.ViewHolder>()
 {
     class ViewHolder(ItemView : View) : RecyclerView.ViewHolder(ItemView) {
@@ -30,10 +31,15 @@ class RestAdapterProductos (private val mList: List<ItemsProductos>):
         
     }
 
+    interface OnItemClickListener {
+        fun onItemClick(position: Int)
+    }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder{
         val view = LayoutInflater.from(parent.context).inflate(R.layout.items_productos, parent, false)
         return ViewHolder(view)
+
     }
     override fun getItemCount(): Int {
         return mList.size
@@ -51,6 +57,11 @@ class RestAdapterProductos (private val mList: List<ItemsProductos>):
         holder.tamano.text = itemsRest.tamano
         holder.dispo.text = itemsRest.disponibilidad
         holder.cate.text = itemsRest.categoriaComidaRapida
+
+        holder.itemView.setOnClickListener {
+            // Llama al método onItemClick del listener cuando se hace clic en un elemento
+            listener.onItemClick(position)
+        }
     }
 
 
