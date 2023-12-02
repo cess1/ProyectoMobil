@@ -1,4 +1,4 @@
-package com.example.proyectomobil.Video
+package com.example.proyectomobil
 
 data class Video(
     val MAS: String,

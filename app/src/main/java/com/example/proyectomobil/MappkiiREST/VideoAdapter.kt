@@ -1,5 +1,6 @@
-package com.example.proyectomobil.Video
+package com.example.proyectomobil
 
+// VideoAdapter.kt
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,10 +17,9 @@ class VideoAdapter(private val videos: List<Video>, private val listener: OnItem
         fun onItemClick(video: Video,videoUrls: List<String>)
     }
 
-    inner class VideoViewHolder(itemView: View, private val listener: OnItemClickListener) : RecyclerView.ViewHolder(itemView),
-        View.OnClickListener {
+    inner class VideoViewHolder(itemView: View, private val listener: OnItemClickListener) : RecyclerView.ViewHolder(itemView),View.OnClickListener {
         val textTitle: TextView = itemView.findViewById(R.id.textTitle)
-        val textMas: TextView = itemView.findViewById(R.id.textMas)
+        val textSubtitle: TextView = itemView.findViewById(R.id.textSubtitle)
         init {
             itemView.setOnClickListener(this)
         }
@@ -32,14 +32,14 @@ class VideoAdapter(private val videos: List<Video>, private val listener: OnItem
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VideoViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_c_v, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_video, parent, false)
         return VideoViewHolder(view,listener)
     }
 
     override fun onBindViewHolder(holder: VideoViewHolder, position: Int) {
         val video = videos[position]
         holder.textTitle.text = video.title
-        holder.textMas.text = video.MAS
+        holder.textSubtitle.text = video.MAS
     }
 
     override fun getItemCount(): Int {

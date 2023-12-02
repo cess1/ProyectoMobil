@@ -1,9 +1,9 @@
-package com.example.proyectomobil.Video
+package com.example.proyectomobil
 
 import retrofit2.Call
 import retrofit2.http.GET
-interface ConsumirApi {
 
+interface ConsumirApi {
     @GET("Videos")
     fun getTraer(): Call<Videos>
 }

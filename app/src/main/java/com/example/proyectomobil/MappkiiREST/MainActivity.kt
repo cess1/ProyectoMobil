@@ -1,26 +1,27 @@
-package com.example.proyectomobil.Video
+package com.example.proyectomobil
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import com.example.proyectomobil.databinding.ActivityVideosComidaBinding
+
+import com.example.proyectomobil.databinding.ActivityMainBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 class MainActivity : AppCompatActivity(), VideoAdapter.OnItemClickListener  {
 
-    lateinit var binding: ActivityVideosComidaBinding
+lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityVideosComidaBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val retroftiTraer = RetrofitViComidas.consumirApi.getTraer()
+        val retroftiTraer = RetrofitClient.consumirApi.getTraer()
 
-        retroftiTraer.enqueue(object : Callback<Videos> {
+        retroftiTraer.enqueue(object : Callback<Videos>{
             override fun onResponse(call: Call<Videos>, response: Response<Videos>) {
                 val videos = response.body()?.videos ?: emptyList()
                 val adapter = VideoAdapter(videos, this@MainActivity)
@@ -35,9 +36,9 @@ class MainActivity : AppCompatActivity(), VideoAdapter.OnItemClickListener  {
     }
 
     override fun onItemClick(video: Video, videoUrls: List<String>) {
-        val intent = Intent(this, VideoVC::class.java)
+        val intent = Intent(this, VideoPlayerActivity::class.java)
         intent.putExtra("VIDEO_TITLE", video.title)
-        intent.putExtra("VIDEO_MAS", video.MAS)
+        intent.putExtra("VIDEO_SUBTITLE", video.MAS)
         intent.putExtra("VIDEO_URLS", video.sources.toTypedArray())
 
         startActivity(intent)

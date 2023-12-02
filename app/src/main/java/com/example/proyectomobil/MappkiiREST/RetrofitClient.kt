@@ -1,8 +1,10 @@
-package com.example.proyectomobil.Video
+package com.example.proyectomobil
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-object RetrofitViComidas {
+
+object RetrofitClient {
+
     private val retrofit = Retrofit.Builder()
         .baseUrl("http://demo3782254.mockable.io/")
         .addConverterFactory(GsonConverterFactory.create())

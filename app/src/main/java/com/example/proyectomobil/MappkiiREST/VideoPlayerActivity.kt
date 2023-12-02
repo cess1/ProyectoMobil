@@ -1,4 +1,4 @@
-package com.example.proyectomobil.Video
+package com.example.proyectomobil
 
 import android.net.Uri
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.proyectomobil.R
 
-class VideoVC : AppCompatActivity() {
+class VideoPlayerActivity : AppCompatActivity() {
 
     lateinit var videoView: VideoView
     lateinit var videoTitleTextView: TextView
@@ -16,7 +16,7 @@ class VideoVC : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_v_c)
+        setContentView(R.layout.activity_video_player)
 
         videoView = findViewById(R.id.vdPromocional)
         videoTitleTextView = findViewById(R.id.videoTitleTextView)
