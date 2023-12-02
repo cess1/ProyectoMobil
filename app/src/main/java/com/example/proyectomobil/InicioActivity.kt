@@ -13,6 +13,7 @@ class InicioActivity : AppCompatActivity() {
         setContentView(R.layout.activity_inicio)
 
         val buttonVideos: Button = findViewById(R.id.buttonVideos)
+        val btnComentarios: Button = findViewById(R.id.btnComentarios)
 
         // Asignar un evento clic al botón
         buttonVideos.setOnClickListener {
@@ -20,5 +21,13 @@ class InicioActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        btnComentarios.setOnClickListener {
+            val comment = Intent(this, MainActivity::class.java)
+            startActivity(comment)
+        }
     }
+
+
+
 }
