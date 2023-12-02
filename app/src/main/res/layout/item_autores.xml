@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+    <TextView
+        android:id="@+id/lbl_Codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Codigo:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-light">
+    </TextView>
+    <TextView
+        android:id="@+id/lbl_Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-light">
+    </TextView>
+        <TextView
+            android:id="@+id/lbl_Apellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apellido:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-light">
+        </TextView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
