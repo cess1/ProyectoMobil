@@ -29,7 +29,7 @@ class AccederActivity : AppCompatActivity() {
                 Toast.makeText(this, "Usuario y/o contraseña incorrecta", Toast.LENGTH_LONG).show()
             } else {
                 cursor!!.moveToFirst()
-                val usuarioIndex = cursor.getColumnIndex("USUARIO");
+                val usuarioIndex = cursor.getColumnIndex("TELEFONO");
                 val telefono = cursor.getString(usuarioIndex)
 
                 val productScreen = Intent(this, InicioActivity::class.java)

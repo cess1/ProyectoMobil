@@ -11,7 +11,7 @@ class BDHelper (context: Context, factory: SQLiteDatabase.CursorFactory?)
 
         companion object {
             private val DATABASE_NAME = "BD_Mappkii"
-            private val DATABASE_VERSION = 1
+            private val DATABASE_VERSION = 2
             private val TABLA_USUARIOS = "USUARIO"
             private val COLUMN_ID = "IDUSER"
             private val COLUMN_NOMBRES = "NOMBRES"
@@ -25,12 +25,12 @@ class BDHelper (context: Context, factory: SQLiteDatabase.CursorFactory?)
     override fun onCreate(db: SQLiteDatabase) {
         var queryCreateTable =
             ("CREATE TABLE " + TABLA_USUARIOS + " ( " +
-                    COLUMN_ID + " INT PRIMARY KEY, " +
-                    COLUMN_NOMBRES + "TEXT, " +
-                    COLUMN_APELLIDOS + "TEXT, " +
-                    COLUMN_TELEFONO + "INT, "+
-                    COLUMN_CORREO + "TEXT, "+
-                    COLUMN_CONTRASENA + "TEXT" + ")"
+                    COLUMN_ID + " INTEGER PRIMARY KEY, " +
+                    COLUMN_NOMBRES + " TEXT, " +
+                    COLUMN_APELLIDOS + " TEXT, " +
+                    COLUMN_TELEFONO + " TEXT, "+
+                    COLUMN_CORREO + " TEXT, "+
+                    COLUMN_CONTRASENA + " TEXT" + ")"
                     )
         db.execSQL(queryCreateTable)
     }
@@ -39,9 +39,7 @@ class BDHelper (context: Context, factory: SQLiteDatabase.CursorFactory?)
         TODO("Not yet implemented")
     }
 
-    fun CrearRegistro(
-        correo:String, nombres:String,
-        apellidos:String, telefono: String, contrasena:String ){
+    fun CrearRegistro(nombres:String, apellidos:String, telefono: String,correo:String, contrasena:String ){
         val values = ContentValues();
         values.put(COLUMN_NOMBRES,nombres)
         values.put(COLUMN_APELLIDOS,apellidos)
@@ -56,6 +54,7 @@ class BDHelper (context: Context, factory: SQLiteDatabase.CursorFactory?)
         val db = this.readableDatabase
         val sql = "SELECT * FROM " + TABLA_USUARIOS + " WHERE " + COLUMN_TELEFONO + " = '" + telefono + "' AND " +
                 COLUMN_CONTRASENA + " = '" + contrasena + "' "
+
         return db.rawQuery(sql, null)
     }
 }

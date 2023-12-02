@@ -30,7 +30,7 @@ class RegistrarActivity : AppCompatActivity() {
 
             val db = BDHelper(this, null)
 
-            db.CrearRegistro(correo, nombres, apellidos,telefono, contrasena )
+            db.CrearRegistro(nombres, apellidos,telefono, correo, contrasena)
             Toast.makeText(this, "Se registro el usuario de manera exitosa", Toast.LENGTH_LONG).show()
 
             inputCorreo.text.clear()
