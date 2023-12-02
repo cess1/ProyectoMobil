@@ -65,10 +65,10 @@
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnComentarios"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="COMENTARIOS" />
         </LinearLayout>
     </LinearLayout>
 
